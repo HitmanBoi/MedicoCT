@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>MedicoCT - Blockchain Health System</title>
+</head>
+<body>
+    <header>
+        <h1>MedicoCT</h1>
+        <p>Blockchain Health System</p>
+    </header>
+
+    <section id="loginForm">
+        <h2>Login</h2>
+        <form id="login">
+            <label for="userType">Select User Type:</label>
+            <select id="userType" name="userType">
+                <option value="doctor">Doctor</option>
+                <option value="patient">Patient</option>
+                <option value="pharmacist">Pharmacist</option>
+                <option value="supplier">Medical Equipment Supplier</option>
+                <option value="medicalUser">Medical Related User</option>
+            </select>
+
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="button" onclick="login()">Login</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
